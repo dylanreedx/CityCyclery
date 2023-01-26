@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Poppins } from '@next/font/google';
 
-const poppins = Poppins({
-  weight: '400',
-  style: 'normal',
-});
+// const poppins = Poppins({
+//   weight: '400',
+//   style: 'normal',
+// });
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main style={poppins.style} className='bg-dark-500'>
+      <main className='bg-dark-500'>
         <h1 className='text-red-200'>test</h1>
       </main>
     </>
