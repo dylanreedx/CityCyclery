@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  /* sets the default bg to our color */
+  @apply bg-dark-500;
+}
