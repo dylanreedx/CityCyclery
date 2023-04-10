@@ -22,7 +22,7 @@ export function Navbar() {
 					<Button variant='primary-sm' href='/contact'>
 						Contact
 					</Button>
-					<ul className='flex flex-row gap-2 text-light-500 ml-5'>
+					<ul className='flex flex-row gap-2 text-light-500 text-2xl ml-5'>
 						<li>
 							<InstagramLogo weight='fill' />
 						</li>
