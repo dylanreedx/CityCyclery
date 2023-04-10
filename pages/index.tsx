@@ -18,7 +18,7 @@ export default function Home() {
 				description='Sales, Service & Repair of Any & All Bicycles - Windsor, ON'
 			/>
 			<Layout>
-				<HeroSection />
+				<HeroSection> </HeroSection>
 			</Layout>
 		</>
 	);
