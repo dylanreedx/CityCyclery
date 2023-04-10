@@ -2,35 +2,23 @@ import React from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
 import Link from 'next/link';
 
-const buttonStyle = cva(
-	'py-2 px-4 rounded flex-row items-center justify-evenly',
-	{
-		variants: {
-			variant: {
-				primary: 'bg-accent-500',
-				secondary: 'bg-dark-600 text-white',
-			},
-		},
-	},
-);
-const buttonTextStyle = cva('font-poppins', {
+const buttonStyle = cva('rounded flex-row items-center justify-evenly', {
 	variants: {
-		textSize: {
-			sm: 'text-xs',
-			base: 'text-sm',
-			lg: 'text-lg',
+		variant: {
+			'primary-base': 'bg-accent-500 text-sm py-2 px-4',
+			'primary-sm': 'bg-accent-500 text-xs py-1 px-2',
+			'secondary-base': 'bg-dark-600 text-white text-sm py-2 px-4',
+			'secondary-sm': 'bg-dark-600 text-white text-xs py-1 px-2',
 		},
 	},
 });
 
 interface ButtonProps
 	extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
-		VariantProps<typeof buttonStyle>,
-		VariantProps<typeof buttonTextStyle> {
+		VariantProps<typeof buttonStyle> {
 	children: React.ReactNode;
-	variant: 'primary' | 'secondary';
+	variant: 'primary-base' | 'secondary-base' | 'primary-sm' | 'secondary-sm';
 	icon?: React.ReactNode;
-	textSize?: 'sm' | 'base' | 'lg';
 	href: string;
 }
 
@@ -38,14 +26,13 @@ export default function Button({
 	children,
 	variant,
 	icon,
-	textSize,
 	href,
 	...props
 }: ButtonProps) {
 	return (
 		<Link href={href} {...props} className={buttonStyle({ variant })}>
 			{icon && icon}
-			<span className={buttonTextStyle({ textSize })}>{children}</span>
+			<span>{children}</span>
 		</Link>
 	);
 }
