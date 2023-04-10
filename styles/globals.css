@@ -6,3 +6,22 @@ html {
   /* sets the default bg to our color */
   @apply bg-dark-500;
 }
+.btn {
+  @apply rounded;
+  @apply font-poppins;
+  @apply py-1;
+  @apply px-3;
+}
+.btn-base {
+  @apply text-lg;
+}
+.btn-sm {
+  @apply text-sm;
+}
+.btn-primary{
+  @apply bg-accent-500;
+}
+.btn-secondary{
+  @apply bg-dark-600;
+  @apply text-white;
+}
