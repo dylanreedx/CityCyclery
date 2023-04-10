@@ -17,9 +17,9 @@ export default function Home() {
 				title='Home - City Cyclery'
 				description='Sales, Service & Repair of Any & All Bicycles - Windsor, ON'
 			/>
-			<Layout>
-				<HeroSection> </HeroSection>
-			</Layout>
+			<main className='bg-dark-500'>
+				<HeroSection />
+			</main>
 		</>
 	);
 }
