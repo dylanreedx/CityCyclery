@@ -12,10 +12,8 @@ export default function Home() {
   return (
     <>
       <HeadComponent
-        title={'Home - City Cyclery'}
-        description={
-          'Sales, Service & Repair of Any & All Bicycles - Windsor, ON'
-        }
+        title='Home - City Cyclery'
+        description='Sales, Service & Repair of Any & All Bicycles - Windsor, ON'
       ></HeadComponent>
       <main className='bg-dark-500'>
         <h1 className='text-red-200'>test</h1>
