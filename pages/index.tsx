@@ -14,12 +14,20 @@ export default function Home() {
 			<HeadComponent
 				title='Home - City Cyclery'
 				description='Sales, Service & Repair of Any & All Bicycles - Windsor, ON'
-			></HeadComponent>
+			/>
 			<main className='bg-dark-500'>
-				<h1 className='text-red-200'>test</h1>
-				<Button href='/services' variant='primary' textSize='base'>
-					Services
-				</Button>
+				<section>
+					<h1>Sales, Service & Repair of Any & All Bicycles</h1>
+					<p>Proudly serving Windsor & Essex County</p>
+					<div>
+						<Button variant='primary' href='/contact'>
+							Contact
+						</Button>
+						<Button variant='secondary' href='/services'>
+							Contact
+						</Button>
+					</div>
+				</section>
 			</main>
 		</>
 	);
