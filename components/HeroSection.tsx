@@ -22,10 +22,10 @@ export default function HeroSection() {
 				Expert Service & Repair, and a Vast Selection of Parts and Accessories.
 			</p>
 			<div className='flex flex-col text-center md:flex-row gap-2 z-50'>
-				<Button variant='primary' href='/contact'>
+				<Button variant='primary-sm' href='/contact'>
 					Contact
 				</Button>
-				<Button variant='secondary' href='/services'>
+				<Button variant='secondary-sm' href='/services'>
 					Services
 				</Button>
 			</div>
