@@ -21,7 +21,7 @@ export default function Home() {
 				<main className='bg-dark-500'>
 					<HeroSection />
 				</main>
-			</Layout
+			</Layout>
 		</>
 	);
 }
