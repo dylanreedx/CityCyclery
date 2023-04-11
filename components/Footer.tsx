@@ -19,6 +19,9 @@ export function Footer() {
 									<Link href='/'>Home</Link>
 								</li>
 								<li className='text-sm'>
+									<Link href='/about'>About Us</Link>
+								</li>
+								<li className='text-sm'>
 									<Link href='/services'>Services</Link>
 								</li>
 								<li className='text-sm'>
