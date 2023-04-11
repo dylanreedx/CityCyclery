@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 html {
-  /* sets the default bg to our color */
-  @apply bg-dark-500;
+	/* sets the default bg to our color */
+	@apply bg-dark-500 overflow-x-hidden;
+}
+
+.horizontal-scroll {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 2rem;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+	display: none;
 }
