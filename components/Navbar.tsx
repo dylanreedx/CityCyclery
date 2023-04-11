@@ -4,8 +4,8 @@ import { FacebookLogo, InstagramLogo } from 'phosphor-react';
 
 export function Navbar() {
 	return (
-		<header className='p-4'>
-			<nav className='bg-dark-600 flex flex-row items-center justify-between p-4 rounded-md max-w-5xl mx-auto'>
+		<header className='p-4 flex-[0.25] fixed top-0 z-50 w-full'>
+			<nav className='bg-dark-600/50 flex flex-row items-center justify-between p-4 rounded-md max-w-5xl mx-auto backdrop-blur-lg'>
 				<div>Logo</div>
 				<div className='flex flex-row items-center'>
 					<ul className='flex flex-row text-light-500 gap-4 mr-10 text-xs'>

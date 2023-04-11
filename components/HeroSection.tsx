@@ -3,7 +3,7 @@ import Button from '@/components/Button';
 
 export default function HeroSection() {
 	return (
-		<section className='flex flex-col gap-2 relative min-h-[75vh] p-20 text-center md:text-left'>
+		<section className='flex flex-col gap-2 relative min-h-[75vh] z-40 p-20 text-center md:text-left'>
 			<div className='absolute w-full md:w-3/4 h-full top-0 right-0 z-40'>
 				<div className='absolute inset-0 w-full h-full z-50 bg-gradient-to-r from-dark-500 to-transparent' />
 				<div className='absolute inset-0 w-full h-full z-50 bg-gradient-to-t from-dark-500 to-transparent' />
