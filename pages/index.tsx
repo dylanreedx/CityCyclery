@@ -2,7 +2,7 @@ import HeroSection from '@/components/HeroSection';
 import { Poppins } from '@next/font/google';
 import { Layout } from '@/components/Layout';
 import SectionComponent from '@/components/SectionComponent';
-import { brands } from '@/utils/brands-data';
+import { brands } from '@/utils/brands';
 import Image from 'next/image';
 
 // const poppins = Poppins({
@@ -28,7 +28,7 @@ export default function Home() {
 						{brands.map((brand) => (
 							<div
 								key={brand.name}
-								className='bg-dark-600 h-full relative rounded-md overflow-hidden flex-1 min-w-[300px]'
+								className='bg-dark-600 h-full relatve rounded-md overflow-hidden flex-1 min-w-[300px]'
 							>
 								<div className='relative w-full h-[10em] rounded-b-xl overflow-hidden'>
 									<Image
