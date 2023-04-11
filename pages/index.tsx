@@ -1,8 +1,5 @@
-import { HeadComponent } from '@/components/Head';
 import HeroSection from '@/components/HeroSection';
-
 import { Poppins } from '@next/font/google';
-import { Navbar } from '@/components/Navbar';
 import { Layout } from '@/components/Layout';
 
 // const poppins = Poppins({
@@ -13,14 +10,11 @@ import { Layout } from '@/components/Layout';
 export default function Home() {
 	return (
 		<>
-			<HeadComponent
+			<Layout
 				title='Home - City Cyclery'
 				description='Sales, Service & Repair of Any & All Bicycles - Windsor, ON'
-			/>
-			<Layout>
-				<main className='bg-dark-500'>
-					<HeroSection />
-				</main>
+			>
+				<HeroSection />
 			</Layout>
 		</>
 	);

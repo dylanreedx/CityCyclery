@@ -8,10 +8,7 @@ import { Layout } from '@/components/Layout';
 export default function Services() {
 	return (
 		<>
-			<HeadComponent
-				title='Services - City Cyclery'
-			/>
-			<Layout>
+			<Layout title='Services - City Cyclery'>
                 <h1>Services</h1>
                 
                 <h2>Builds</h2>
