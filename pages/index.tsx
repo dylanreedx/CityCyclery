@@ -2,7 +2,7 @@ import HeroSection from '@/components/HeroSection';
 import { Poppins } from '@next/font/google';
 import { Layout } from '@/components/Layout';
 import SectionComponent from '@/components/SectionComponent';
-import { brands } from '@/utils/brands';
+import { brands } from '@/utils/brands-data';
 import Image from 'next/image';
 
 // const poppins = Poppins({
@@ -27,7 +27,7 @@ export default function Home() {
 					<div className='horizontal-scroll'>
 						{brands.map((brand) => (
 							<div
-								key={brand.name}
+								key={brand.title}
 								className='bg-dark-600 h-full relatve rounded-md overflow-hidden flex-1 min-w-[300px]'
 							>
 								<div className='relative w-full h-[10em] rounded-b-xl overflow-hidden'>
@@ -35,14 +35,14 @@ export default function Home() {
 										src={brand.image}
 										fill
 										className='object-cover w-full h-full'
-										alt={brand.name}
+										alt={brand.title}
 									/>
 								</div>
 								<div className='p-4'>
 									<h3 className='text-light-500 font-medium text-xl'>
-										{brand.name}
+										{brand.title}
 									</h3>
-									<p className='text-light-600 text-sm'>{brand.excerpt}</p>
+									<p className='text-light-600 text-sm'>{brand.title}</p>
 								</div>
 							</div>
 						))}
