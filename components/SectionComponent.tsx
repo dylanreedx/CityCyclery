@@ -1,6 +1,6 @@
 import Button from './Button';
 
-type Props = {
+type SectionProps = {
 	children: React.ReactNode;
 	title: string;
 	btnText: string;
@@ -14,7 +14,7 @@ export default function SectionComponent({
 	btnText,
 	btnAction,
 	style,
-}: Props) {
+}: SectionProps) {
 	return (
 		<section className={'w-full h-full my-4 '.concat(style)}>
 			<div className='flex items-center gap-1 mb-4'>

@@ -22,7 +22,7 @@ export default function Home() {
 					title='Brands'
 					btnText='See All'
 					btnAction='/brands'
-					style='ml-20'
+					style='ml-20 mb-10'
 				>
 					<div className='horizontal-scroll'>
 						{brands.map((brand) => (
