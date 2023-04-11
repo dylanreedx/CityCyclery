@@ -20,7 +20,9 @@ function Input({ name, id, label, input }: InputProps) {
 
 export default function Contact() {
 	return (
-		<Layout title='Contact - City Cyclery'>
+		<Layout
+		title='Contact - City Cyclery'
+		>
 			<div className='mt-32 min-h-[60vh] bg-dark-700'></div>
 			<section className='grid place-items-center text-light-500 -translate-y-20'>
 				<div className='bg-dark-600 py-12 px-20 rounded-xl shadow-md'>

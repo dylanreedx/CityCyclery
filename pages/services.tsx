@@ -1,21 +1,23 @@
-import { HeadComponent } from '@/components/Head';
 import Link from 'next/link';
-
 import { Poppins } from '@next/font/google';
-import { Navbar } from '@/components/Navbar';
 import { Layout } from '@/components/Layout';
+import CardComponent from '@/components/CardComponent';
 
 export default function Services() {
 	return (
 		<>
-			<Layout title='Services - City Cyclery'>
+			<Layout
+            title='Services - City Cyclery'
+            >
                 <h1>Services</h1>
                 
                 <h2>Builds</h2>
 
-                <h4>Bike Build</h4>
-                <p>$100.00</p>
-                <p>This is the description of the bike biuld.</p>
+                <CardComponent
+                title='Bike Build'
+                price= {100}
+                description='This is the description of the bike build'
+                ></CardComponent>
 
                 <h4>E-Bike Build</h4>
                 <p>$150.00</p>
