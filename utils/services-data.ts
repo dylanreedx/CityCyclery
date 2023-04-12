@@ -31,16 +31,56 @@ export const tunes : CardProps [] = [
 ];
 export const installs : CardProps[] = [
     {
-        title: 'install 1',
-        description: 'This is the description of the install'
+        title: 'Tube/Tire Install',
+        price: 10
     },
     {
-        title: 'install 2',
-        description: 'This is the description of the install'
+        title: 'E-Bike Tube/Tire Install',
+        price: 20
     },
     {
-        title: 'install 3',
-        description: 'This is the description of the install'
+        title: 'Scooter Tube/Tire Install',
+        price: 25
+    },
+    {
+        title: 'Front Derailleur Install',
+        price: 30
+    },
+    {
+        title: 'Rear Derailleur Install',
+        price: 35
+    },
+    {
+        title: 'Mechanical Brake Front/Rear Install',
+        price: 35
+    },
+    {
+        title: 'Hydraulic Brake Front/Rear Install',
+        price: 40
+    },
+    {
+        title: 'Single Speed Chain Install',
+        price: 20
+    },
+    {
+        title: 'Multi Speed Chain Install',
+        price: 25
+    },
+    {
+        title: 'Bar Tape Install',
+        price: 20
+    },
+    {
+        title: 'Kcikstand Install',
+        price: 10
+    },
+    {
+        title: 'Fender Install',
+        price: 10
+    },
+    {
+        title: 'Bottom Bracker Install',
+        price: 35
     }
 ];
 export const adjustments : CardProps[] = [
