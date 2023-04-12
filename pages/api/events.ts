@@ -36,7 +36,7 @@ function filterEvents(data: any) {
 	for (let key in data) {
 		if (data[key].type === 'VEVENT' && data[key].summary != 'Busy') {
 			responseData.push({
-				eventId: data[key].key,
+				eventId: key,
 				startTime: data[key].start,
 				endTime: data[key].end,
 				dateType: data[key].datetype,
