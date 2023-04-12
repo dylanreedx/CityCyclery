@@ -8,7 +8,7 @@ export default function Services() {
 	return (
 		<>
 			<Layout
-            title='Services - City Cyclery'
+                title='Services - City Cyclery'
             >
                 <div className='mt-16 max-w-5xl m-auto p-4 mb-4'>
                     <h1 className='font-bold text-4xl text-light-500 my-16'>Services</h1>
