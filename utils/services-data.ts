@@ -71,7 +71,7 @@ export const installs : CardProps[] = [
         price: 20
     },
     {
-        title: 'Kcikstand Install',
+        title: 'Kickstand Install',
         price: 10
     },
     {
@@ -107,5 +107,19 @@ export const adjustments : CardProps[] = [
     {
         title: 'Rear Wheel True',
         price: 35
+    }
+];
+export const misc: CardProps[] = [
+    {
+        title: 'Front/Rear Hub Service',
+        price: 30
+    },
+    {
+        title: 'Hydraulic Break Bleed',
+        price: 35
+    },
+    {
+        title: 'Hanger True',
+        price: 30
     }
 ];
