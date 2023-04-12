@@ -85,15 +85,27 @@ export const installs : CardProps[] = [
 ];
 export const adjustments : CardProps[] = [
     {
-        title: 'adjustment 1',
-        description: 'This is the description of the adjustment'
+        title: 'Headset Adjust',
+        price: 15
     },
     {
-        title: 'adjustment 2',
-        description: 'This is the description of the adjustment'
+        title: 'Front/Rear Derailleur Adjust',
+        price: 25
     },
     {
-        title: 'adjustment 3',
-        description: 'This is the description of the adjustment'
+        title: 'Mechanical Brake Front/Rear Adjust',
+        price: 25
+    },
+    {
+        title: 'Hydraulic Brake Adjust',
+        price: 35
+    },
+    {
+        title: 'Front Wheel True',
+        price: 30
+    },
+    {
+        title: 'Rear Wheel True',
+        price: 35
     }
 ];

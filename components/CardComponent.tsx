@@ -1,7 +1,7 @@
 export type CardProps = {
     title: string;
     price?: number;
-    description: string;
+    description?: string;
 };
 export default function CardComponent({
     title,
