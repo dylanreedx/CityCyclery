@@ -56,15 +56,17 @@ export function Navbar() {
 						<div className='ml-5 text-2xl'>{socialIcons}</div>
 					</div>
 				</div>
-				<div className='sm:hidden flex flex-col pt-4'>
-					{navList}
-					<div className='flex flex-col justify-between gap-4 items-stretch text-center w-full mt-16 text-4xl'>
-						{socialIcons}
-						<Button variant='primary-sm' href='/contact'>
-							Contact
-						</Button>
+				{navbar ? (
+					<div className='sm:hidden flex flex-col pt-4'>
+						{navList}
+						<div className='flex flex-col justify-between gap-4 items-stretch text-center w-full mt-16 text-4xl'>
+							{socialIcons}
+							<Button variant='primary-sm' href='/contact'>
+								Contact
+							</Button>
+						</div>
 					</div>
-				</div>
+				) : null}
 			</nav>
 		</header>
 	);
