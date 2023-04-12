@@ -58,7 +58,7 @@ export default function Services() {
                             </div>
                             <div className='grid md:grid-cols-1 lg:grid-cols-3 gap-3 my-10'>
                                 {misc.map((value) => (
-                                    <div className='max-w-sm bg-dark-700 py-8 px-6 rounded-3xl'>
+                                    <div className='max-w-sm bg-dark-700 py-8 px-6 rounded-3xl' key={value.title}>
                                         <h2 className='text-2xl text-accent-500 font-bold'>{value.title}</h2>
                                         <span className='text-light-500 text-3xl font-semibold'>${value.price}</span>
                                     </div>
