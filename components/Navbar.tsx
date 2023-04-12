@@ -1,12 +1,20 @@
 import Button from '@/components/Button';
 import Link from 'next/link';
-import { FacebookLogo, InstagramLogo } from 'phosphor-react';
+import { FacebookLogo, InstagramLogo, List, X } from 'phosphor-react';
+import { useState } from 'react';
 
 export function Navbar() {
+	const [navbar, setNavbar] = useState(false);
 	return (
 		<header className='p-4 flex-[0.25] fixed top-0 z-50 w-full'>
 			<nav className='bg-dark-600/50 flex flex-row items-center justify-between p-4 rounded-md max-w-5xl mx-auto backdrop-blur-lg'>
 				<div>Logo</div>
+				<div className='md:hidden text-light-500 text-3xl'>
+					<button onClick={() => setNavbar(!navbar)}>
+						<span className='sr-only'>Open menu</span>
+						{navbar ? <X weight='bold' /> : <List weight='fill' />}
+					</button>
+				</div>
 				<div className='flex flex-row items-center'>
 					<ul className='flex flex-row text-light-500 gap-4 mr-10 text-xs'>
 						<li>
