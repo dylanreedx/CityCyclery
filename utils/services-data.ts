@@ -4,29 +4,29 @@ export const builds : CardProps []= [
     {
         title: 'Bike Build',
         price: 100,
-        description: "This is the description of the build.This is the description of the build."
+        description: "Bring in a bike you've purchased elsewhere and we build it for you. Guaranteed proper assembly of any make/model of bike."
     },
     {
         title: 'E-Bike Build',
         price: 150,
-        description: "This is the description of the build."
+        description: "Bring in an e-bike you've purchased elsewhere and we build it for you. Guaranteed proper assembly of any e-bike."
     },
     {
         title: "Trike Build",
         price: 250,
-        description: "This is the description of the build."
+        description: "Bring in a trike you've purchased elsewhere and we build it for you. Guaranteed proper assembly of any trike."
     }
 ];
 export const tunes : CardProps [] = [
     {
         title: 'Bike Tune',
         price: 90,
-        description: "This is the description of the tune."
+        description: "Gear and brake tuning. Wheel alignment (balancing/tightening spokes). Full wash and de-grease. Re-lubrication. Ensuring the bike is in safe and working condition. Does not include the cost of parts. "
     },
     {
         title: 'Bike Wash-Bold Tighten',
         price: 35,
-        description: "This is the description of the wash and bolt tighten."
+        description: "Full bike wash and general bolt tightening. Does not include any adjustments."
     }
 ];
 export const installs : CardProps[] = [
