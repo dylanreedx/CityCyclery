@@ -39,7 +39,11 @@ export function Navbar() {
 
 	return (
 		<header className='p-4 flex-[0.25] fixed top-0 z-50 w-screen'>
-			<nav className='bg-dark-600/50 p-4 rounded-md max-w-5xl mx-auto backdrop-blur-lg'>
+			<nav
+				className={`${
+					navbar ? 'max-h-screen' : 'max-h-16'
+				} bg-dark-600/50 p-4 rounded-md max-w-5xl mx-auto backdrop-blur-lg transition-all duration-500 ease-in-out overflow-hidden`}
+			>
 				<div className='flex flex-row justify-between items-center'>
 					<div>Logo</div>
 					<div className='sm:hidden text-light-500 text-2xl h-6'>
