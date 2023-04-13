@@ -2,7 +2,7 @@ import HeroSection from '@/components/HeroSection';
 import { Poppins } from '@next/font/google';
 import { Layout } from '@/components/Layout';
 import SectionComponent from '@/components/SectionComponent';
-import { brands } from '@/utils/brands-data';
+import { houseBrands } from '@/utils/brands-data';
 import Image from 'next/image';
 
 // const poppins = Poppins({
@@ -25,7 +25,7 @@ export default function Home() {
 					style='ml-20 mb-10'
 				>
 					<div className='horizontal-scroll'>
-						{brands.map((brand) => (
+						{houseBrands.map((brand) => (
 							<div
 								key={brand.title}
 								className='bg-dark-600 h-full relatve rounded-md overflow-hidden flex-1 min-w-[300px]'
