@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { FacebookLogo, InstagramLogo } from 'phosphor-react';
 
 export function Footer() {
@@ -6,9 +7,16 @@ export function Footer() {
 		<footer className=' bg-dark-600'>
 			<div className='w-full p-4 py-6 lg:py-8'>
 				<div className='md:flex md:justify-evenly'>
-					<div className='mb-4 md:mb-0'>
-						<Link href='/'>Logo</Link>
-						<span className='text-sm text-light-600 ml-2'>
+					<div className='flex flex-row items-center h-1/4 gap-x-6 mb-6 md:mb-0'>
+						<Link href='/'>
+							<Image
+							src='/city-cyclery-logo-white.svg'
+							alt='City Cyclery Logo'
+							width={100}
+							height={100}
+							></Image>
+						</Link>
+						<span className='text-sm text-light-600'>
 							&copy; 2023 City Cyclery
 						</span>
 					</div>
@@ -28,7 +36,7 @@ export function Footer() {
 									<Link href='/brands'>Brands</Link>
 								</li>
 								<li className='text-sm'>
-									<Link href='/contact'>Contact</Link>
+									<Link href='/contact'>Contact Us</Link>
 								</li>
 							</ul>
 						</div>
