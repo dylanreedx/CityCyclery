@@ -16,7 +16,7 @@ export function HeadComponent({ title, description }: Props) {
 			<meta name='viewport' content='width=device-width, initial-scale=1' />
 			<meta name='description' content={description || defaultDescription} />
 			<meta name='keywords' content='City, Cyclery, Bikes, Windsor, Repair' />
-			<link rel='icon' href='/favicon.ico' />
+			<link rel='icon' href='/cc-lm-light.svg' />
 		</Head>
 	);
 }
