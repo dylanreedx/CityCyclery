@@ -49,13 +49,12 @@ export function Navbar() {
 					<div className='flex flex-row items-center gap-x-2'>
 						<Link href='/'>
 							<Image
-							src='/city-cyclery-logo-white.svg'
+							src='/cc-wm-horizontal-light.svg'
 							alt='City Cyclery Logo'
-							width={60}
-							height={60}
+							width={220}
+							height={220}
 							></Image>
 						</Link>
-						<h2 className='text-light-500 font-bold text-2xl'>City Cyclery</h2>
 					</div>
 					<div className='md:hidden text-light-500 text-2xl h-6'>
 						<button onClick={() => setNavbar(!navbar)}>

@@ -10,32 +10,32 @@ export function Footer() {
 					<div className='flex flex-row items-center h-1/4 gap-x-6 mb-6 md:mb-0'>
 						<Link href='/'>
 							<Image
-							src='/city-cyclery-logo-white.svg'
+							src='/cc-lm-light.svg'
 							alt='City Cyclery Logo'
-							width={60}
-							height={60}
+							width={50}
+							height={50}
 							></Image>
 						</Link>
 						<span className='text-sm text-light-600'>
-							&copy; 2023 City Cyclery
+							&copy; 2023, All Rights Reserved.
 						</span>
 					</div>
 					<div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 space-x-6'>
 						<div className='text-light-600'>
 							<ul className='space-y-3'>
-								<li className='text-sm'>
+								<li>
 									<Link href='/'>Home</Link>
 								</li>
-								<li className='text-sm'>
+								<li>
 									<Link href='/about'>About Us</Link>
 								</li>
-								<li className='text-sm'>
+								<li>
 									<Link href='/services'>Services</Link>
 								</li>
-								<li className='text-sm'>
+								<li>
 									<Link href='/brands'>Brands</Link>
 								</li>
-								<li className='text-sm'>
+								<li>
 									<Link href='/contact'>Contact Us</Link>
 								</li>
 							</ul>
