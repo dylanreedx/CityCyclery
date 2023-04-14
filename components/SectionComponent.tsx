@@ -17,8 +17,8 @@ export default function SectionComponent({
 }: SectionProps) {
 	return (
 		<section className={'w-full h-full my-4 '.concat(style)}>
-			<div className='flex items-center gap-1 mb-4'>
-				<h2 className='font-medium text-2xl text-light-500'>{title}</h2>
+			<div className='flex flex-row items-center gap-3 mb-4'>
+				<h2 className='font-bold text-3xl text-light-500'>{title}</h2>
 				<Button href={btnAction} variant='secondary-base'>
 					{btnText}
 				</Button>

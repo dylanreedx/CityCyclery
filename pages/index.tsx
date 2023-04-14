@@ -4,6 +4,7 @@ import { Layout } from '@/components/Layout';
 import SectionComponent from '@/components/SectionComponent';
 import { houseBrands } from '@/utils/brands-data';
 import Image from 'next/image';
+import Button from '@/components/Button';
 
 // const poppins = Poppins({
 //   weight: '400',
@@ -28,9 +29,9 @@ export default function Home() {
 						{houseBrands.map((brand) => (
 							<div
 								key={brand.title}
-								className='bg-dark-600 h-full relatve rounded-md overflow-hidden flex-1 min-w-[300px]'
+								className='bg-dark-600 h-full relatve rounded-xl overflow-hidden flex-1 min-w-[300px] pb-3'
 							>
-								<div className='relative w-full h-[10em] rounded-b-xl overflow-hidden'>
+								<div className='relative w-full h-[10em] rounded-xl overflow-hidden'>
 									<Image
 										src={brand.image}
 										fill
@@ -39,10 +40,13 @@ export default function Home() {
 									/>
 								</div>
 								<div className='p-4'>
-									<h3 className='text-light-500 font-medium text-xl'>
+									<h3 className='text-light-500 font-bold text-2xl mb-2'>
 										{brand.title}
 									</h3>
-									<p className='text-light-600 text-sm'>{brand.title}</p>
+									<p className='text-light-600 text-sm mb-5'>{brand.description}</p>
+									<Button variant='primary-base' href='/contact'>
+										Contact Us
+									</Button>
 								</div>
 							</div>
 						))}
