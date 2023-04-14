@@ -12,8 +12,8 @@ export function Footer() {
 							<Image
 							src='/city-cyclery-logo-white.svg'
 							alt='City Cyclery Logo'
-							width={100}
-							height={100}
+							width={60}
+							height={60}
 							></Image>
 						</Link>
 						<span className='text-sm text-light-600'>
