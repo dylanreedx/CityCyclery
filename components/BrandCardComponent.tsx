@@ -32,6 +32,7 @@ export function HouseBrandComponent({
                     <Button
                     variant='primary-base'
                     href={url}
+                    target="__blank"
                     >View Brand
                     </Button>
                 </div>
@@ -47,7 +48,7 @@ export function DistBrandComponent({
 }: BrandProps ){
     return (
         <div className="container m-auto bg-dark-700 rounded-2xl p-3 hover:bg-dark-600">
-            <a href={url}>
+            <a href={url} target="__blank">
                 <div className="flex flex-row">
                     <div className="object-fit">
                         <Image
