@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Layout } from "@/components/Layout";
 import CardComponent from "@/components/CardComponent";
+import { Info } from "phosphor-react";
 
 export default function About() {
     return(
@@ -10,7 +11,10 @@ export default function About() {
                 description='About us'
             >
                 <div className='mt-16 max-w-5xl m-auto p-4 mb-4'>
-                    <h1 className='font-bold text-4xl text-light-500 my-16'>About Us</h1>
+                    <div className="flex flex-row gap-3 text-light-500 my-16 items-baseline">
+                        <h1 className='font-bold text-4xl'>About Us</h1>
+                        <Info size={30} />
+                    </div>
                     <div className='grid lg:grid-cols-2 mb-24'>
                         <div className="grid grid-cols-1 text-light-600 mb-10 pr-8 gap-4">
                             <p>Lorem ipsum dolor sit amet consectetur. Tristique adipiscing sed ut donec feugiat lorem malesuada massa. Proin proin in sit varius viverra nulla. Bibendum eu volutpat adipiscing leo felis tellus.</p> 
