@@ -1,5 +1,6 @@
 import { Layout } from '@/components/Layout';
 import { CalendarCheck, Chat } from 'phosphor-react';
+import { companyDetails } from '@/utils/company-details';
 
 type InputProps = {
 	name: string;
@@ -106,8 +107,8 @@ export default function Contact() {
 					<CalendarCheck size={40} className='mx-auto mb-3'/>
 					<h3 className='mb-6 text-3xl font-semibold'>Store Hours</h3>
 					<ul className='space-y-3 text-xl'>
-						<li>Tues - Sat: 10 - 5PM</li>
-						<li>Sun & Mon - Closed</li>
+						<li>{companyDetails.hours.open}</li>
+						<li>{companyDetails.hours.closed}</li>
 					</ul>
 				</div>
 			</section>
