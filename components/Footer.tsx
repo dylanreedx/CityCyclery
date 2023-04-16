@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FacebookLogo, InstagramLogo} from 'phosphor-react';
+import { companyDetails } from '@/utils/company-details';
 
 export function Footer() {
 	return (
@@ -10,7 +11,7 @@ export function Footer() {
 					<div className='flex flex-row items-center h-1/4 gap-x-4 mb-10'>
 						<Link href='/'>
 							<Image
-							src='/cc-lm-light.svg'
+							src={companyDetails.logos.logomark}
 							alt='City Cyclery Logo'
 							width={50}
 							height={50}
@@ -44,18 +45,22 @@ export function Footer() {
 							<h2 className='mb-3 uppercase font-semibold'>Follow Us</h2>
 							<ul className='flex flex-row gap-2 text-2xl'>
 								<li>
-									<InstagramLogo weight='fill' />
+									<Link href={companyDetails.socialMedia.instagram} target='__blank'>
+										<InstagramLogo weight='fill' />
+									</Link>
 								</li>
 								<li>
-									<FacebookLogo weight='fill' />
+									<Link href={companyDetails.socialMedia.facebook} target='__blank'>
+										<FacebookLogo weight='fill' />
+									</Link>
 								</li>
 							</ul>
 						</div>
 						<div className='text-light-500'>
 							<h3 className='mb-3 uppercase font-semibold'>Store Hours</h3>
 							<ul className='space-y-1'>
-								<li>Tues - Sat: 10 - 5PM</li>
-								<li>Sun & Mon - Closed</li>
+								<li>{companyDetails.hours.open}</li>
+								<li>{companyDetails.hours.closed}</li>
 							</ul>
 						</div>
 					</div>

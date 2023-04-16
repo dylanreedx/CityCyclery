@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FacebookLogo, InstagramLogo, List, X } from 'phosphor-react';
 import { useState } from 'react';
+import { companyDetails } from '@/utils/company-details';
 
 export function Navbar() {
 	const [navbar, setNavbar] = useState(false);
@@ -30,10 +31,14 @@ export function Navbar() {
 	const socialIcons = (
 		<ul className='flex flex-row justify-center gap-2 text-light-500'>
 			<li>
-				<InstagramLogo weight='fill' />
+				<Link href={companyDetails.socialMedia.instagram} target='__blank'>
+					<InstagramLogo weight='fill' />
+				</Link>
 			</li>
 			<li>
-				<FacebookLogo weight='fill' />
+				<Link href={companyDetails.socialMedia.facebook} target='__blank'>
+					<FacebookLogo weight='fill' />
+				</Link>
 			</li>
 		</ul>
 	);
@@ -49,7 +54,7 @@ export function Navbar() {
 					<div className='flex flex-row items-center gap-x-2'>
 						<Link href='/'>
 							<Image
-							src='/cc-wm-horizontal-light.svg'
+							src={companyDetails.logos.watermark}
 							alt='City Cyclery Logo'
 							width={220}
 							height={220}
