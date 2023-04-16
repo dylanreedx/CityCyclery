@@ -1,4 +1,5 @@
 import { Layout } from '@/components/Layout';
+import { CalendarCheck, Chat } from 'phosphor-react';
 
 type InputProps = {
 	name: string;
@@ -27,7 +28,10 @@ export default function Contact() {
 			<section className='grid place-items-center text-light-500 -translate-y-20'>
 				<div className='bg-dark-600 py-12 px-20 rounded-xl shadow-md'>
 					<div className='pb-12'>
-						<h1 className='font-medium text-3xl'>Contact Us</h1>
+						<div className='flex flex-row gap-3 items-baseline'>
+							<h1 className='font-medium text-3xl mb-3'>Contact Us</h1>
+							<Chat  size={30}/>
+						</div>
 						<p className='text-light-600 max-w-[35ch]'>
 							Inquiry about anything regarding services, tune-ups, and builds!
 						</p>
@@ -52,7 +56,6 @@ export default function Contact() {
 								</select>
 							}
 						/>
-
 						<Input
 							name='name'
 							id='name'
@@ -67,7 +70,6 @@ export default function Contact() {
 								/>
 							}
 						/>
-
 						<Input
 							name='email'
 							id='email'
@@ -82,7 +84,6 @@ export default function Contact() {
 								/>
 							}
 						/>
-
 						<Input
 							name='message'
 							id='message'
@@ -100,6 +101,14 @@ export default function Contact() {
 							Send
 						</button>
 					</form>
+				</div>
+				<div className='flex flex-col py-10 px-20 mt-16 text-light-500 bg-dark-600 rounded-xl text-center'>
+					<CalendarCheck size={40} className='mx-auto mb-3'/>
+					<h3 className='mb-6 text-3xl font-semibold'>Store Hours</h3>
+					<ul className='space-y-3 text-xl'>
+						<li>Tues - Sat: 10 - 5PM</li>
+						<li>Sun & Mon - Closed</li>
+					</ul>
 				</div>
 			</section>
 		</Layout>
