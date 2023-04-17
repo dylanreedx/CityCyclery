@@ -23,7 +23,7 @@ export const houseBrands : BrandProps[] = [
 			'https://images.unsplash.com/photo-1501147830916-ce44a6359892?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
 		url:'https://epiccycles.ca',
 		description:
-			'Located in the GTA, Epic Cycles is Canadas Premier Distributor and Electric Bikes and E-Scooters. Their goal is to change the way people travel by promoting e-bike riding as a safe, green alternative to other modes of transportation. ',
+			'Located in the GTA, Epic Cycles is Canadas Premier Distributor of Electric Bikes and E-Scooters. Their goal is to change the way people travel by promoting e-bike riding as a safe, green alternative to other modes of transportation. ',
 	}
 ];
 export const distBrands : BrandProps[] = [
