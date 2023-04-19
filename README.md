@@ -28,7 +28,3 @@ We have created a [project](https://github.com/users/carbondesigned/projects/2) 
 3. Make your changes.
 4. Create a pull request.
 5. let people review it (request from anyone).
-
-## Google API Key
-
-AIzaSyBQsY1qixB-cvCuFe6JzTQMlaAjE90pxys
