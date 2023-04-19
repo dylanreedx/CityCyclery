@@ -25,11 +25,11 @@ export default function Home() {
 					btnAction='/brands'
 					style='px-20 mb-10'
 				>
-					<div className='grid grid-cols-3 gap-3'>
+					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
 						{houseBrands.map((brand) => (
 							<div
 								key={brand.title}
-								className='bg-dark-600 h-full relatve rounded-xl overflow-hidden flex-1 min-w-[300px] pb-3'
+								className='bg-dark-600 h-full rounded-xl overflow-hidden pb-3'
 							>
 								<div className='relative w-full h-[10em] rounded-xl overflow-hidden'>
 									<Image
