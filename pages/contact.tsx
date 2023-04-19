@@ -27,7 +27,7 @@ export default function Contact() {
 			<div className='mt-32 min-h-[50vh] bg-dark-500'>
 				<Map />
 			</div>
-			<section className='grid place-items-center text-light-500 z-50 -translate-y-10'>
+			<section className='grid place-items-center text-light-500 z-50 -translate-y-36'>
 				<div className='bg-dark-600 py-12 px-20 rounded-xl shadow-md'>
 					<div className='pb-12'>
 						<div className='flex flex-row gap-3 items-baseline'>
