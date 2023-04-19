@@ -1,7 +1,10 @@
 export const companyDetails: any = {
     "logos" : {
         "watermark" : "/cc-wm-horizontal-light.svg",
-        "logomark" : "cc-lm-light.svg"
+        "logomark" : {
+            "light": "cc-lm-light.svg",
+            "dark" : "cc-lm-dark.svg",
+        }
     },
     "hours": {
         "open" : "Tues - Sat: 10 - 5PM",

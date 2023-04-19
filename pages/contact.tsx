@@ -1,6 +1,7 @@
 import { Layout } from '@/components/Layout';
 import { CalendarCheck, Chat } from 'phosphor-react';
 import { companyDetails } from '@/utils/company-details';
+import Map from '@/components/MapsComponent';
 
 type InputProps = {
 	name: string;
@@ -25,8 +26,10 @@ export default function Contact() {
 		<Layout
 		title='Contact - City Cyclery'
 		>
-			<div className='mt-32 min-h-[60vh] bg-dark-700'></div>
-			<section className='grid place-items-center text-light-500 -translate-y-20'>
+			<div className='mt-32 min-h-[50vh] bg-dark-500'>
+				<Map></Map>
+			</div>
+			<section className='grid place-items-center text-light-500 z-50 -translate-y-10'>
 				<div className='bg-dark-600 py-12 px-20 rounded-xl shadow-md'>
 					<div className='pb-12'>
 						<div className='flex flex-row gap-3 items-baseline'>

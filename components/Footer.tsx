@@ -11,7 +11,7 @@ export function Footer() {
 					<div className='flex flex-row items-center h-1/4 gap-x-4 mb-10'>
 						<Link href='/'>
 							<Image
-							src={companyDetails.logos.logomark}
+							src={companyDetails.logos.logomark.light}
 							alt='City Cyclery Logo'
 							width={50}
 							height={50}

@@ -7,6 +7,7 @@
 5. Open `localhost:3000` in your browser
 
 ## Prettier
+
 - Download the Prettier VSCode extension
 - Go to settings and search for `Format on Save`
 - You can customize the formatting engine for languages and might need to specify JSX/TSX/React
@@ -27,3 +28,7 @@ We have created a [project](https://github.com/users/carbondesigned/projects/2) 
 3. Make your changes.
 4. Create a pull request.
 5. let people review it (request from anyone).
+
+## Google API Key
+
+AIzaSyBQsY1qixB-cvCuFe6JzTQMlaAjE90pxys
