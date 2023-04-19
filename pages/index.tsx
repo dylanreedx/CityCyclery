@@ -43,7 +43,7 @@ export default function Home() {
 									<h3 className='text-light-500 font-bold text-2xl mb-2'>
 										{brand.title}
 									</h3>
-									<p className='text-light-600 text-sm mb-5'>
+									<p className='text-light-600 text-sm mb-5 line-clamp-5'>
 										{brand.description}
 									</p>
 									<Button variant='primary-base' href='/contact'>
