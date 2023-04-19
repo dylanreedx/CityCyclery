@@ -23,9 +23,9 @@ export default function Home() {
 					title='Brands'
 					btnText='See All'
 					btnAction='/brands'
-					style='ml-20 mb-10'
+					style='px-20 mb-10'
 				>
-					<div className='horizontal-scroll'>
+					<div className='grid grid-cols-3 gap-3'>
 						{houseBrands.map((brand) => (
 							<div
 								key={brand.title}
@@ -43,7 +43,9 @@ export default function Home() {
 									<h3 className='text-light-500 font-bold text-2xl mb-2'>
 										{brand.title}
 									</h3>
-									<p className='text-light-600 text-sm mb-5'>{brand.description}</p>
+									<p className='text-light-600 text-sm mb-5'>
+										{brand.description}
+									</p>
 									<Button variant='primary-base' href='/contact'>
 										Contact Us
 									</Button>
