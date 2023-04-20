@@ -35,7 +35,7 @@ export default function Contact() {
 							<Chat size={30} />
 						</div>
 						<p className='text-light-600 max-w-[35ch]'>
-							Inquiry about anything regarding services, tune-ups, and builds!
+							Inquire about anything regarding services, tune-ups, and builds!
 						</p>
 					</div>
 					<form action='' className='flex flex-col gap-2'>
@@ -89,7 +89,7 @@ export default function Contact() {
 						<Input
 							name='message'
 							id='message'
-							label='message'
+							label='Message'
 							input={
 								<textarea
 									name='message'
