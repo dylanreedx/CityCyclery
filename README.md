@@ -7,6 +7,7 @@
 5. Open `localhost:3000` in your browser
 
 ## Prettier
+
 - Download the Prettier VSCode extension
 - Go to settings and search for `Format on Save`
 - You can customize the formatting engine for languages and might need to specify JSX/TSX/React
