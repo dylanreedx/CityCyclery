@@ -14,13 +14,16 @@ export default function Events() {
 			<Layout title='Events - City Cyclery' description='Upcoming events'>
 				<div className='mt-16 max-w-5xl m-auto p-4 mb-4'>
 					<div className='flex flex-row gap-3 text-light-500 my-16 items-baseline'>
-						<h1 className='font-bold text-4xl'>Events</h1>
+						<h1 className='font-bold text-4xl'>Upcoming Events</h1>
 						<Calendar size={32} />
 					</div>
-					<div>
+					<div className='grid grid-cols-2 gap-8'>
 						{events.data ? (
 							events.data.map((event: any) => (
-								<div key={event.eventId}>
+								<div
+									key={event.eventId}
+									className='m-auto 11/12 bg-dark-700 rounded-2xl py-8 px-6'
+								>
 									<EventComponent
 										title={event.title}
 										startTime={event.startTime}
