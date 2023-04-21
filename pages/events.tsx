@@ -37,6 +37,10 @@ export default function Events() {
 									></EventComponent>
 								</div>
 							))
+						) : events.isLoading ? (
+							<span className='font-medium text-lg text-light-500'>
+								Loading Events...
+							</span>
 						) : (
 							<span className='font-medium text-lg text-light-500'>
 								No events found...
