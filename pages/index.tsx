@@ -38,6 +38,7 @@ export default function Home() {
 										fill
 										className='object-cover w-full h-full'
 										alt={brand.title}
+										loading='lazy'
 									/>
 								</div>
 								<div className='p-4'>
