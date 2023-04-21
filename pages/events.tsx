@@ -1,9 +1,13 @@
 import { Layout } from '@/components/Layout';
 import CardComponent from '@/components/CardComponent';
-import { Calendar } from 'phosphor-react';
-import { isMetaProperty } from 'tsutils';
+import useSWR from 'swr';
+import { Calendar, Car } from 'phosphor-react';
+
+// @ts-ignore
+const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
 
 export default function Events() {
+	const events = getEvents();
 	return (
 		<>
 			<Layout title='Events - City Cyclery' description='Upcoming events'>
@@ -12,10 +16,29 @@ export default function Events() {
 						<h1 className='font-bold text-4xl'>Events</h1>
 						<Calendar size={32} />
 					</div>
+					<div>
+						{events.data ? (
+							events.data.map((event: any) => (
+								<div key={event.eventId}>
+									<CardComponent title={event.title}></CardComponent>
+								</div>
+							))
+						) : (
+							<p>No events found...</p>
+						)}
+					</div>
 				</div>
 			</Layout>
 		</>
 	);
 }
 
-function getEvents() {}
+function getEvents() {
+	const { data, error, isLoading } = useSWR(`/api/events`, fetcher);
+
+	return {
+		data: data,
+		isLoading,
+		isError: error,
+	};
+}
