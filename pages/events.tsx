@@ -6,6 +6,7 @@ import { EventComponent } from '@/components/EventComponent';
 
 // @ts-ignore
 const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
+const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 export default function Events() {
 	const events = getEvents();
@@ -16,6 +17,9 @@ export default function Events() {
 					<div className='flex flex-row gap-3 text-light-500 my-16 items-baseline'>
 						<h1 className='font-bold text-4xl'>Upcoming Events</h1>
 						<Calendar size={32} />
+						<span className='font-medium text-xs text-light-500 block'>
+							All times are based on timezone: {timezone}.
+						</span>
 					</div>
 					<div className='grid grid-cols-2 gap-8'>
 						{events.data ? (
