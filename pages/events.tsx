@@ -8,7 +8,7 @@ const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
 const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 export default function Events() {
-	const events = getEvents();
+	const events = useEvents();
 	return (
 		<>
 			<Layout title='Events - City Cyclery' description='Upcoming events'>
@@ -49,7 +49,7 @@ export default function Events() {
 	);
 }
 
-function getEvents() {
+function useEvents() {
 	const { data, error, isLoading } = useSWR(`/api/events`, fetcher);
 
 	return {
