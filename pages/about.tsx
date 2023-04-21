@@ -18,9 +18,9 @@ export default function About() {
                     <div className='grid lg:grid-cols-2 mb-24'>
                         <div className="grid grid-cols-1 text-light-600 mb-10 pr-8 gap-4">
                             <p>The City Cyclery's modest beginnings were first established by a few local 'vintage bike nerds'.</p> 
-                            <p>initially, when a few friends figured out they were all secretly vintage bike nerds, Chris Holt came up with the idead of starting a Wheelman Club, the like 'olde' days of cycling and they quickly filled up his garage with vintage rusty bikes.</p>
+                            <p>Initially, when a few friends figured out they were all secretly vintage bike nerds, Chris Holt came up with the idea of starting a Wheelman Club, the like 'olde' days of cycling and they quickly filled up his garage with vintage rusty bikes.</p>
                             <p>Chris, along with Andrew Foot and Ron Drouillard, started 'aoldbikes.ca' and posted a few of their restorations online- initially just to show off- but very soon, people were interested in buying the newly restored bicycles.</p>
-                            <p>From this, Ron rented a small 500 square space in a alley off of Chilver Rc in Walkerville.</p>
+                            <p>From this, Ron rented a small 500 square space in an alley off Chilver Rd in Walkerville.</p>
                             <p>This was originally a clubhouse for the Wheelman Club, but it quickly evolved into something much bigger.</p>
                             <p>Chris and Ron established the City Cyclery and were fortunate to quickly employ Mike Beauchamp as the head mechanic.</p>
                             <p>Over the last 10-12 years, the City Cyclery has been on the move and experienced some changes.</p>
@@ -44,7 +44,7 @@ export default function About() {
                         ></CardComponent>
                         <CardComponent
                             title='Drouillard Rd'
-                            description='At the end of 2020, Ben, along with Thad Renaud and Mike Underwood (also owners of the shop), decided to move locations again. For the past 3 year, City Cyclery has called Drouillard Rd home. They hope to continue to grow as a business here in this community.'
+                            description='At the end of 2020, Ben, along with Thad Renaud and Mike Underwood (also owners of the shop), decided to move locations again. For the past 3 years, City Cyclery has called Drouillard Rd home. They hope to continue to grow as a business here in this community.'
                         ></CardComponent>
                     </div> 
                 </div>
