@@ -17,7 +17,7 @@ export default function Services() {
                         <Wrench size={30}/>
                     </div>
                     <h2 className='font-bold text-4xl text-light-500 mb-4'>Builds</h2>
-                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-2'>
+                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-2 p-8 rounded-xl bg-dark-600'>
                     {builds.map((build) => (
                         <CardComponent
                         title={build.title}
@@ -28,7 +28,7 @@ export default function Services() {
                     ))}
                     </div>
                     <h2 className='font-bold text-4xl text-light-500 mb-4 mt-10'>Tune-ups</h2>
-                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-2'>
+                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-2 p-8 rounded-xl bg-dark-600'>
                     {tunes.map((tune) => (
                         <CardComponent
                         title={tune.title}
@@ -40,8 +40,8 @@ export default function Services() {
                     </div>
                     <div className='grid gap-12 mt-10 justify-center'>
                         <div>
-                            <h2 className='font-bold text-4xl text-light-500 mb-4'>Installs, Adjustments & Misc</h2>
-                            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                            <h2 className='font-bold text-4xl text-light-500 mb-4'>Installs</h2>
+                            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-8 rounded-xl bg-dark-600'>
                                 {installs.map((install) => (
                                 <CardComponent
                                 title={install.title}
@@ -50,8 +50,8 @@ export default function Services() {
                                 ></CardComponent>
                                 ))}
                             </div>
-                            <hr className="m-auto my-12 w-5/6 h-0.5 border-t-0 bg-light-600 opacity-100 dark:opacity-50" />
-                            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                            <h2 className='font-bold text-4xl text-light-500 mb-4 mt-10'>Adjustments</h2>
+                            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-8 rounded-xl bg-dark-600'>
                                 {adjustments.map((adjustment) => (
                                 <CardComponent
                                 title={adjustment.title}
@@ -60,9 +60,10 @@ export default function Services() {
                                 ></CardComponent>
                                 ))}
                             </div>
-                            <div className='grid md:grid-cols-1 lg:grid-cols-3 gap-3 my-10'>
+                            <h2 className='font-bold text-4xl text-light-500 mb-4 mt-10'>Miscellaneous</h2>
+                            <div className='grid md:grid-cols-3 gap-3 p-8 rounded-xl mb-4 bg-dark-600'>
                                 {misc.map((value) => (
-                                    <div className='max-w-sm bg-dark-700 py-8 px-6 rounded-3xl' key={value.title}>
+                                    <div className='py-8 px-6 rounded-3xl' key={value.title}>
                                         <h2 className='text-2xl text-accent-500 font-bold'>{value.title}</h2>
                                         <span className='text-light-500 text-3xl font-semibold'>${value.price}</span>
                                     </div>

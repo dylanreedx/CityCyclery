@@ -1,6 +1,7 @@
 import { Layout } from '@/components/Layout';
 import { CalendarCheck, Chat } from 'phosphor-react';
 import { companyDetails } from '@/utils/company-details';
+import Map from '@/components/MapsComponent';
 
 type InputProps = {
 	name: string;
@@ -22,19 +23,19 @@ function Input({ name, id, label, input }: InputProps) {
 
 export default function Contact() {
 	return (
-		<Layout
-		title='Contact - City Cyclery'
-		>
-			<div className='mt-32 min-h-[60vh] bg-dark-700'></div>
-			<section className='grid place-items-center text-light-500 -translate-y-20'>
+		<Layout title='Contact - City Cyclery'>
+			<div className='mt-32 min-h-[50vh] bg-dark-500'>
+				<Map />
+			</div>
+			<section className='grid place-items-center text-light-500 z-50 -translate-y-36'>
 				<div className='bg-dark-600 py-12 px-20 rounded-xl shadow-md'>
 					<div className='pb-12'>
 						<div className='flex flex-row gap-3 items-baseline'>
 							<h1 className='font-medium text-3xl mb-3'>Contact Us</h1>
-							<Chat  size={30}/>
+							<Chat size={30} />
 						</div>
 						<p className='text-light-600 max-w-[35ch]'>
-							Inquiry about anything regarding services, tune-ups, and builds!
+							Inquire about anything regarding services, tune-ups, and builds!
 						</p>
 					</div>
 					<form action='' className='flex flex-col gap-2'>
@@ -88,7 +89,7 @@ export default function Contact() {
 						<Input
 							name='message'
 							id='message'
-							label='message'
+							label='Message'
 							input={
 								<textarea
 									name='message'
@@ -104,7 +105,7 @@ export default function Contact() {
 					</form>
 				</div>
 				<div className='flex flex-col py-10 px-20 mt-16 text-light-500 bg-dark-600 rounded-xl text-center'>
-					<CalendarCheck size={40} className='mx-auto mb-3'/>
+					<CalendarCheck size={40} className='mx-auto mb-3' />
 					<h3 className='mb-6 text-3xl font-semibold'>Store Hours</h3>
 					<ul className='space-y-3 text-xl'>
 						<li>{companyDetails.hours.open}</li>

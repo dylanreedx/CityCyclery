@@ -17,11 +17,13 @@ export default function About() {
                     </div>
                     <div className='grid lg:grid-cols-2 mb-24'>
                         <div className="grid grid-cols-1 text-light-600 mb-10 pr-8 gap-4">
-                            <p>Lorem ipsum dolor sit amet consectetur. Tristique adipiscing sed ut donec feugiat lorem malesuada massa. Proin proin in sit varius viverra nulla. Bibendum eu volutpat adipiscing leo felis tellus.</p> 
-                            <p>Et lorem at lectus aliquam quisque varius id id. Pretium cras elit molestie scelerisque fermentum morbi amet diam. Gravida dignissim egestas elementum ipsum arcu.</p>
-                            <p>Et faucibus lorem pellentesque hendrerit in eros rutrum. Faucibus porttitor proin fusce eu.</p>
-                            <p>Felis laoreet orci amet pharetra aliquam elit eu viverra nibh. Aliquam sed neque vel netus nisl vestibulum viverra ullamcorper ligula. Neque quis metus in odio diam aliquet pellentesque.</p>
-                            <p>Consectetur nec scelerisque aliquam turpis pretium duis. Diam commodo sed in imperdiet. Ligula maecenas fringilla ipsum quis massa ultricies. Lectus eget velit ornare adipiscing sem vel. Pharetra.</p>
+                            <p>The City Cyclery&apos;s modest beginnings were first established by a few local &apos;vintage bike nerds&apos;.</p> 
+                            <p>Initially, when a few friends figured out they were all secretly vintage bike nerds, Chris Holt came up with the idea of starting a Wheelman Club, the like &apos;olde&apos; days of cycling and they quickly filled up his garage with vintage rusty bikes.</p>
+                            <p>Chris, along with Andrew Foot and Ron Drouillard, started &apos;aoldbikes.ca&apos; and posted a few of their restorations online- initially just to show off- but very soon, people were interested in buying the newly restored bicycles.</p>
+                            <p>From this, Ron rented a small 500 square space in an alley off Chilver Rd in Walkerville.</p>
+                            <p>This was originally a clubhouse for the Wheelman Club, but it quickly evolved into something much bigger.</p>
+                            <p>Chris and Ron established the City Cyclery and were fortunate to quickly employ Mike Beauchamp as the head mechanic.</p>
+                            <p>Over the last 10-12 years, the City Cyclery has been on the move and experienced some changes.</p>
                         </div>
                         <Image
                         src='/shop-img.jpg'
@@ -34,15 +36,15 @@ export default function About() {
                     <div className='grid lg:grid-cols-3 gap-x-6 gap-y-2 mb-4'>
                         <CardComponent
                             title='Since 2012'
-                            description='Lorem ipsum dolor sit amet consectetur. Facilisis eget lorem leo nec. Ultricies leo tortor velit risus cursus. Ut fermentum in mauris interdum amet velit auctor.'
+                            description='Chris and Ron brought on Stephen Hargreaves as a partner, and they went on to establish the City Cyclery in a historic building they completely renovated back to its original glory on Lincoln Rd.'
                         ></CardComponent>
                         <CardComponent
-                            title='Bike Club'
-                            description='Lorem ipsum dolor sit amet consectetur. Facilisis eget lorem leo nec. Ultricies leo tortor velit risus cursus. Ut fermentum in mauris interdum amet velit auctor.'
+                            title='In 2017'
+                            description='Ron made the decision to pass the business along as the building was being sold. In comes Ben Baillargeon, a mechanic at City Cyclery for many years. Ron sold the business to Ben and the shops new location was decided. The City Cyclery moved to Erie St where they loved for 6 years.'
                         ></CardComponent>
                         <CardComponent
                             title='Drouillard Rd'
-                            description='Lorem ipsum dolor sit amet consectetur. Facilisis eget lorem leo nec. Ultricies leo tortor velit risus cursus. Ut fermentum in mauris interdum amet velit auctor.'
+                            description='At the end of 2020, Ben, along with Thad Renaud and Mike Underwood (also owners of the shop), decided to move locations again. For the past 3 years, City Cyclery has called Drouillard Rd home. They hope to continue to grow as a business here in this community.'
                         ></CardComponent>
                     </div> 
                 </div>
