@@ -1,3 +1,6 @@
+import { format, parseISO } from 'date-fns';
+import star from 'phosphor-react/src/icons/Star';
+
 export type EventProps = {
 	startTime: string;
 	endTime: string;
@@ -15,16 +18,21 @@ export function EventComponent({
 	description,
 	location,
 }: EventProps) {
+	// format date
+	const dateString =
+		dateType === 'date'
+			? format(parseISO(startTime), 'EEEE, LLLL d')
+			: format(parseISO(startTime), "E, LLL d 'at' h:mm a") +
+			  format(parseISO(endTime), " - E, LLL d 'at' h:mm a");
 	return (
-		<div>
+		<div className='w-full'>
 			<h2 className='font-bold text-2xl text-accent-500'>{title}</h2>
-			{location ? (
-				<span className='font-medium text-lg text-light-500'>{location}</span>
-			) : (
-				''
-			)}
+			<span className='font-medium text-lg text-light-500 block'>
+				{dateString}
+			</span>
+			<span className='text-base text-md text-light-600'>{location}</span>
 			<div className='text-base text-light-600 mt-2 whitespace-normal'>
-				{description}
+				<p>{description}</p>
 			</div>
 		</div>
 	);
