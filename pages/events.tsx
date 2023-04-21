@@ -1,7 +1,8 @@
 import { Layout } from '@/components/Layout';
 import CardComponent from '@/components/CardComponent';
 import useSWR from 'swr';
-import { Calendar, Car } from 'phosphor-react';
+import { Calendar } from 'phosphor-react';
+import { EventComponent } from '@/components/EventComponent';
 
 // @ts-ignore
 const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
@@ -20,11 +21,20 @@ export default function Events() {
 						{events.data ? (
 							events.data.map((event: any) => (
 								<div key={event.eventId}>
-									<CardComponent title={event.title}></CardComponent>
+									<EventComponent
+										title={event.title}
+										startTime={event.startTime}
+										endTime={event.endTime}
+										dateType={event.dateType}
+										description={event.description}
+										location={event.location}
+									></EventComponent>
 								</div>
 							))
 						) : (
-							<p>No events found...</p>
+							<span className='font-medium text-lg text-light-500'>
+								No events found...
+							</span>
 						)}
 					</div>
 				</div>
