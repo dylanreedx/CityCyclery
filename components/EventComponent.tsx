@@ -31,7 +31,7 @@ export function EventComponent({
 			</span>
 			<span className='text-base text-md text-light-600'>{location}</span>
 			<div className='text-base text-light-600 mt-2 whitespace-normal'>
-				<p>{description}</p>
+				<p className='line-clamp-5'>{description}</p>
 			</div>
 		</div>
 	);
