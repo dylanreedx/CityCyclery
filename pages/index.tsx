@@ -24,15 +24,15 @@ export default function Home() {
 					title='Brands'
 					btnText='See All'
 					btnAction='/brands'
-					style='px-20 mb-10'
+					style='px-4 md:px-20 mb-10'
 				>
 					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
 						{houseBrands.map((brand) => (
 							<div
 								key={brand.title}
-								className='bg-dark-600 h-full rounded-xl overflow-hidden pb-3'
+								className='flex flex-row md:flex-col bg-dark-600 h-full rounded-xl overflow-hidden md:pb-3'
 							>
-								<div className='relative w-full h-[10em] rounded-xl overflow-hidden'>
+								<div className='relative hidden md:block min-w-fit h-[10em] rounded-xl overflow-hidden'>
 									<Image
 										src={brand.image}
 										fill
@@ -41,11 +41,11 @@ export default function Home() {
 										loading='lazy'
 									/>
 								</div>
-								<div className='p-4'>
+								<div className='p-4 pb-5 md:pb-4'>
 									<h3 className='text-light-500 font-bold text-2xl mb-2'>
 										{brand.title}
 									</h3>
-									<p className='text-light-600 text-sm mb-5 line-clamp-5'>
+									<p className='text-light-600 text-sm mb-5 line-clamp-3 sm:line-clamp-5'>
 										{brand.description}
 									</p>
 									<Button
