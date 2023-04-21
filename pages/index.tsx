@@ -5,6 +5,7 @@ import SectionComponent from '@/components/SectionComponent';
 import { houseBrands } from '@/utils/brands-data';
 import Image from 'next/image';
 import Button from '@/components/Button';
+import { HouseBrandComponent } from '@/components/BrandCardComponent';
 
 // const poppins = Poppins({
 //   weight: '400',
@@ -46,8 +47,12 @@ export default function Home() {
 									<p className='text-light-600 text-sm mb-5 line-clamp-5'>
 										{brand.description}
 									</p>
-									<Button variant='primary-base' href='/contact'>
-										Contact Us
+									<Button
+										variant='primary-base'
+										href={brand.url}
+										target='__blank'
+									>
+										View Brand
 									</Button>
 								</div>
 							</div>
