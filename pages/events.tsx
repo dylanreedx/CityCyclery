@@ -1,5 +1,4 @@
 import { Layout } from '@/components/Layout';
-import CardComponent from '@/components/CardComponent';
 import useSWR from 'swr';
 import { Calendar } from 'phosphor-react';
 import { EventComponent } from '@/components/EventComponent';
@@ -26,7 +25,7 @@ export default function Events() {
 							events.data.map((event: any) => (
 								<div
 									key={event.eventId}
-									className='m-auto 11/12 bg-dark-700 rounded-2xl py-8 px-6 min-h-[17.25em]'
+									className='m-auto 11/12 bg-dark-700 rounded-2xl py-8 px-6 min-h-[17.25rem] min-w-full'
 								>
 									<EventComponent
 										title={event.title}
