@@ -5,6 +5,7 @@ import SectionComponent from '@/components/SectionComponent';
 import { houseBrands } from '@/utils/brands-data';
 import Image from 'next/image';
 import Button from '@/components/Button';
+import { HouseBrandComponent } from '@/components/BrandCardComponent';
 
 // const poppins = Poppins({
 //   weight: '400',
@@ -23,30 +24,41 @@ export default function Home() {
 					title='Brands'
 					btnText='See All'
 					btnAction='/brands'
-					style='ml-20 mb-10'
+					style='px-4 md:px-20 mb-10'
 				>
-					<div className='horizontal-scroll'>
+					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
 						{houseBrands.map((brand) => (
 							<div
 								key={brand.title}
-								className='bg-dark-600 h-full relatve rounded-xl overflow-hidden flex-1 min-w-[300px] pb-3'
+								className='flex flex-row md:flex-col bg-dark-600 h-full rounded-xl overflow-hidden md:pb-3'
 							>
-								<div className='relative w-full h-[10em] rounded-xl overflow-hidden'>
+								<div className='relative hidden md:block min-w-fit min-h-[45%] h-[10em] rounded-xl overflow-hidden'>
 									<Image
 										src={brand.image}
 										fill
 										className='object-cover w-full h-full'
 										alt={brand.title}
+										loading='lazy'
 									/>
 								</div>
-								<div className='p-4'>
-									<h3 className='text-light-500 font-bold text-2xl mb-2'>
-										{brand.title}
-									</h3>
-									<p className='text-light-600 text-sm mb-5'>{brand.description}</p>
-									<Button variant='primary-base' href='/contact'>
-										Contact Us
-									</Button>
+								<div className='p-4 pb-5 md:pb-4 flex flex-col justify-between h-full'>
+									<div>
+										<h3 className='text-light-500 font-bold text-2xl mb-2'>
+											{brand.title}
+										</h3>
+										<p className='text-light-600 text-sm mb-5 line-clamp-3 sm:line-clamp-4 lg:line-clamp-5'>
+											{brand.description}
+										</p>
+									</div>
+									<div>
+										<Button
+											variant='primary-base'
+											href={brand.url}
+											target='__blank'
+										>
+											View Brand
+										</Button>
+									</div>
 								</div>
 							</div>
 						))}
