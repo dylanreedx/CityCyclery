@@ -38,7 +38,11 @@ export default function Contact() {
 							Inquire about anything regarding services, tune-ups, and builds!
 						</p>
 					</div>
-					<form action='' className='flex flex-col gap-2'>
+					<form
+						action='https://formspree.io/f/xgebpzvp'
+						method='POST'
+						className='flex flex-col gap-2'
+					>
 						<Input
 							name='inquiry'
 							id='inquiry'
@@ -50,11 +54,11 @@ export default function Contact() {
 									className='bg-dark-500 border-0 outline-0 text-light-600 py-2 px-4 rounded-md cursor-pointer w-full text-sm'
 								>
 									<option value=''>Select Best Fit</option>
-									<option value='service'>Services</option>
-									<option value='tuneup'>Brands</option>
-									<option value='tuneup'>Business</option>
-									<option value='tuneup'>Social</option>
-									<option value='tuneup'>General</option>
+									<option value='services'>Services</option>
+									<option value='brands'>Brands</option>
+									<option value='business'>Business</option>
+									<option value='social'>Social</option>
+									<option value='general'>General</option>
 								</select>
 							}
 						/>
