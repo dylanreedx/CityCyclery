@@ -17,10 +17,10 @@ type EventResponseError = {
 	errorMsg: unknown;
 };
 
-export default async (
+export default async function Events(
 	req: NextApiRequest,
 	res: NextApiResponse<EventData[] | EventResponseError>,
-) => {
+) {
 	try {
 		// Fetch parse and filter iCal data
 		ical.fromURL(calendar).then((data: any) => {
@@ -29,7 +29,7 @@ export default async (
 	} catch (err) {
 		res.status(500).json({ error: 'Failed to fetch iCal data', errorMsg: err });
 	}
-};
+}
 
 function filterEvents(data: any) {
 	let responseData: EventData[] = [];
@@ -46,5 +46,7 @@ function filterEvents(data: any) {
 			});
 		}
 	}
-	return responseData;
+	return responseData.sort((a, b) =>
+		a.startTime > b.startTime ? 1 : b.startTime > a.startTime ? -1 : 0,
+	);
 }
