@@ -42,7 +42,9 @@ const Map = () => {
 				center={mapCenter}
 				mapTypeId={google.maps.MapTypeId.ROADMAP}
 				mapContainerStyle={{ width: '1900px', height: '550px' }}
-			></GoogleMap>
+			>
+				<MarkerF position={mapCenter}></MarkerF>
+			</GoogleMap>
 		</div>
 	);
 };
