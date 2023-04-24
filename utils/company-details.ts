@@ -10,6 +10,12 @@ export const companyDetails: any = {
         "open" : "Tues - Sat: 10 - 5PM",
         "closed" : "Sun & Mon - Closed"
     },
+    "phone" : "(226) 674-0648",
+    "location": {
+        "address": "1008 Droullard Rd.",
+        "city": "Windsor, Ontario", 
+        "postal": "N8Y P28",
+    },
     "socialMedia": {
         "instagram" : "https://www.instagram.com/citycyclery/",
         "facebook" : "https://www.facebook.com/CityCyclery/"
