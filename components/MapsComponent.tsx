@@ -1,6 +1,7 @@
 import { companyDetails } from '@/utils/company-details';
-import { useLoadScript, GoogleMap, MarkerF } from '@react-google-maps/api';
-import { useMemo } from 'react';
+import { useLoadScript, GoogleMap, InfoWindowF } from '@react-google-maps/api';
+import { useMemo, useState } from 'react';
+import Image from 'next/image';
 
 const Map = () => {
 	const mapCenter = useMemo(() => ({ lat: 42.3216447, lng: -83.0000997 }), []);
@@ -32,7 +33,7 @@ const Map = () => {
 			</div>
 		);
 	}
-
+	
 	return (
 		<div className='flex m-auto w-full h-full relative'>
 			<div className='absolute inset-0 bg-gradient-to-t from-black to-transparent pointer-events-none'></div>
@@ -43,7 +44,20 @@ const Map = () => {
 				mapTypeId={google.maps.MapTypeId.ROADMAP}
 				mapContainerStyle={{ width: '1900px', height: '550px' }}
 			>
-				<MarkerF position={mapCenter}></MarkerF>
+				<InfoWindowF
+				position={mapCenter}>
+					<div className='container grid'>
+						<div className='flex flex-row max-w-sm'>
+							<Image src={companyDetails.logos.logomark.dark}
+							alt='City Cyclery Logo'
+							width={40}
+							height={40}>
+							</Image>
+							<h4 className='text-dark-600 font-bold'>City Cyclery</h4>
+						</div>
+						<a href={companyDetails.location.mapsDirections} target='__blank'></a>
+					</div>
+				</InfoWindowF>
 			</GoogleMap>
 		</div>
 	);
