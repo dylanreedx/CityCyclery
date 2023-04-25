@@ -50,12 +50,12 @@ const Map = () => {
 						<div className='flex flex-row max-w-sm'>
 							<Image src={companyDetails.logos.logomark.dark}
 							alt='City Cyclery Logo'
-							width={40}
-							height={40}>
+							width={30}
+							height={30}>
 							</Image>
 							<h4 className='text-dark-600 font-bold'>City Cyclery</h4>
 						</div>
-						<a href={companyDetails.location.mapsDirections} target='__blank' className='hover:font-bold'>Get Directions</a>
+						<a href={companyDetails.location.mapsDirections} target='__blank' className='m-auto p-8 hover:font-bold'>Get Directions</a>
 					</div>
 				</InfoWindowF>
 			</GoogleMap>
