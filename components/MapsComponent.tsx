@@ -55,7 +55,10 @@ const Map = () => {
 							</Image>
 							<h4 className='text-dark-600 font-bold'>City Cyclery</h4>
 						</div>
-						<a href={companyDetails.location.mapsDirections} target='__blank' className='m-auto p-8 hover:font-bold'>Get Directions</a>
+						<div className='grid gap-2 m-auto'>
+							<p className='text-dark-500'>{companyDetails.location.address}</p>
+							<a href={companyDetails.location.mapsDirections} target='__blank' className='text-dark-500 hover:font-bold'>Get Directions</a>
+						</div>
 					</div>
 				</InfoWindowF>
 			</GoogleMap>
