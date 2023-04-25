@@ -1,5 +1,5 @@
 import { Layout } from '@/components/Layout';
-import { CalendarCheck, Chat } from 'phosphor-react';
+import { CalendarCheck, Chat, House } from 'phosphor-react';
 import { companyDetails } from '@/utils/company-details';
 import Map from '@/components/MapsComponent';
 
@@ -27,7 +27,7 @@ export default function Contact() {
 			<div className='mt-32 min-h-[50vh] bg-dark-500'>
 				<Map />
 			</div>
-			<section className='grid place-items-center text-light-500 z-50 -translate-y-36'>
+			<section className='grid place-items-center text-light-500 -translate-y-36'>
 				<div className='bg-dark-600 py-12 px-20 rounded-xl shadow-md'>
 					<div className='pb-12'>
 						<div className='flex flex-row gap-3 items-baseline'>
@@ -108,10 +108,17 @@ export default function Contact() {
 						</button>
 					</form>
 				</div>
-				<div className='flex flex-col py-10 px-20 mt-16 text-light-500 bg-dark-600 rounded-xl text-center'>
-					<CalendarCheck size={40} className='mx-auto mb-3' />
-					<h3 className='mb-6 text-3xl font-semibold'>Store Hours</h3>
-					<ul className='space-y-3 text-xl'>
+				<div className='flex flex-col py-10 px-24 mt-6 text-light-500 bg-dark-600 rounded-xl text-center'>
+					<House size={40} className='mx-auto mb-4' />
+					<ul className='space-y-2 text-xl'>
+						<li><a href={'tel: ' + companyDetails.phone} className='hover:text-accent-500'>{companyDetails.phone}</a></li>
+						<li>{companyDetails.location.address}</li>
+						<li>{companyDetails.location.city}</li>
+						<li>{companyDetails.location.postal}</li>
+					</ul>
+					<hr className='my-8'></hr>
+					<h3 className='mb-6 text-2xl underline underline-offset-8'>Store Hours</h3>
+					<ul className='space-y-2 text-xl'>
 						<li>{companyDetails.hours.open}</li>
 						<li>{companyDetails.hours.closed}</li>
 					</ul>

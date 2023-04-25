@@ -41,7 +41,7 @@ export function Footer() {
 								</li>
 							</ul>
 						</div>
-						<div className='text-light-500'>
+						<div className='flex flex-col text-light-500'>
 							<h2 className='mb-3 uppercase font-semibold'>Follow Us</h2>
 							<ul className='flex flex-row gap-2 text-2xl'>
 								<li>
@@ -56,11 +56,15 @@ export function Footer() {
 								</li>
 							</ul>
 						</div>
-						<div className='text-light-500'>
-							<h3 className='mb-3 uppercase font-semibold'>Store Hours</h3>
+						<div className='flex flex-col gap-4 text-light-500'>
+							<h3 className='uppercase font-semibold underline underline-offset-8'>Store Hours</h3>
 							<ul className='space-y-1'>
 								<li>{companyDetails.hours.open}</li>
 								<li>{companyDetails.hours.closed}</li>
+							</ul>
+							<ul className='space-y-1'>
+								<li><a href={'tel: ' + companyDetails.phone} className='hover:text-accent-500'>{companyDetails.phone}</a></li>
+								<li>{companyDetails.location.address}</li>
 							</ul>
 						</div>
 					</div>

@@ -15,7 +15,7 @@ export default function About() {
                         <h1 className='font-bold text-4xl'>About Us</h1>
                         <Info size={30} />
                     </div>
-                    <div className='grid lg:grid-cols-2 mb-24'>
+                    <div className='grid lg:grid-cols-2 mb-16 p-8 rounded-xl bg-dark-600'>
                         <div className="grid grid-cols-1 text-light-600 mb-10 pr-8 gap-4">
                             <p>The City Cyclery&apos;s modest beginnings were first established by a few local &apos;vintage bike nerds&apos;.</p> 
                             <p>Initially, when a few friends figured out they were all secretly vintage bike nerds, Chris Holt came up with the idea of starting a Wheelman Club, the like &apos;olde&apos; days of cycling and they quickly filled up his garage with vintage rusty bikes.</p>
@@ -28,24 +28,30 @@ export default function About() {
                         <Image
                         src='/shop-img.jpg'
                         alt='City Cyclery Shop'
-                        width={500}
-                        height={500}
-                        className="rounded-xl"
+                        width={550}
+                        height={550}
+                        className="rounded-xl my-auto"
                         ></Image>
                     </div>
                     <div className='grid lg:grid-cols-3 gap-x-6 gap-y-2 mb-4'>
-                        <CardComponent
-                            title='Since 2012'
-                            description='Chris and Ron brought on Stephen Hargreaves as a partner, and they went on to establish the City Cyclery in a historic building they completely renovated back to its original glory on Lincoln Rd.'
-                        ></CardComponent>
-                        <CardComponent
-                            title='In 2017'
-                            description='Ron made the decision to pass the business along as the building was being sold. In comes Ben Baillargeon, a mechanic at City Cyclery for many years. Ron sold the business to Ben and the shops new location was decided. The City Cyclery moved to Erie St where they loved for 6 years.'
-                        ></CardComponent>
-                        <CardComponent
-                            title='Drouillard Rd'
-                            description='At the end of 2020, Ben, along with Thad Renaud and Mike Underwood (also owners of the shop), decided to move locations again. For the past 3 years, City Cyclery has called Drouillard Rd home. They hope to continue to grow as a business here in this community.'
-                        ></CardComponent>
+                        <div className="bg-dark-600 p-8 rounded-xl">
+                            <CardComponent
+                                title='Since 2012'
+                                description='Chris and Ron brought on Stephen Hargreaves as a partner, and they went on to establish the City Cyclery in a historic building they completely renovated back to its original glory on Lincoln Rd.'
+                            ></CardComponent>
+                        </div>
+                        <div className="bg-dark-600 p-8 rounded-xl">
+                            <CardComponent
+                                title='In 2017'
+                                description='Ron made the decision to pass the business along as the building was being sold. In comes Ben Baillargeon, a mechanic at City Cyclery for many years. Ron sold the business to Ben and the shops new location was decided. The City Cyclery moved to Erie St where they loved for 6 years.'
+                            ></CardComponent>
+                        </div>
+                        <div className="bg-dark-600 p-8 rounded-xl">
+                            <CardComponent
+                                title='Drouillard Rd'
+                                description='At the end of 2020, Ben, along with Thad Renaud and Mike Underwood (also owners of the shop), decided to move locations again. For the past 3 years, City Cyclery has called Drouillard Rd home. They hope to continue to grow as a business here in this community.'
+                            ></CardComponent>
+                        </div>
                     </div> 
                 </div>
             </Layout>
