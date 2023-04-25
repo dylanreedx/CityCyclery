@@ -53,9 +53,9 @@ const Map = () => {
 							width={30}
 							height={30}>
 							</Image>
-							<h4 className='text-dark-600 font-bold'>City Cyclery</h4>
+							<h4 className='text-dark-600 font-bold text-2xl'>City Cyclery</h4>
 						</div>
-						<div className='grid gap-2 m-auto'>
+						<div className='grid gap-2 m-auto pt-2'>
 							<p className='text-dark-500'>{companyDetails.location.address}</p>
 							<a href={companyDetails.location.mapsDirections} target='__blank' className='text-dark-500 hover:font-bold'>Get Directions</a>
 						</div>
