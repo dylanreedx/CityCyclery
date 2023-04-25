@@ -34,19 +34,19 @@ export default function About() {
                         ></Image>
                     </div>
                     <div className='grid lg:grid-cols-3 gap-x-6 gap-y-2 mb-4'>
-                        <div className="bg-dark-600 p-8 rounded-xl">
+                        <div className="bg-dark-600 p-8 rounded-xl max-w-md mx-auto">
                             <CardComponent
                                 title='Since 2012'
                                 description='Chris and Ron brought on Stephen Hargreaves as a partner, and they went on to establish the City Cyclery in a historic building they completely renovated back to its original glory on Lincoln Rd.'
                             ></CardComponent>
                         </div>
-                        <div className="bg-dark-600 p-8 rounded-xl">
+                        <div className="bg-dark-600 p-8 rounded-xl max-w-md mx-auto">
                             <CardComponent
                                 title='In 2017'
                                 description='Ron made the decision to pass the business along as the building was being sold. In comes Ben Baillargeon, a mechanic at City Cyclery for many years. Ron sold the business to Ben and the shops new location was decided. The City Cyclery moved to Erie St where they loved for 6 years.'
                             ></CardComponent>
                         </div>
-                        <div className="bg-dark-600 p-8 rounded-xl">
+                        <div className="bg-dark-600 p-8 rounded-xl max-w-md mx-auto">
                             <CardComponent
                                 title='Drouillard Rd'
                                 description='At the end of 2020, Ben, along with Thad Renaud and Mike Underwood (also owners of the shop), decided to move locations again. For the past 3 years, City Cyclery has called Drouillard Rd home. They hope to continue to grow as a business here in this community.'

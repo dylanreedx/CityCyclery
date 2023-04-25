@@ -15,6 +15,7 @@ export const companyDetails: any = {
         "address": "1008 Droullard Rd.",
         "city": "Windsor, Ontario", 
         "postal": "N8Y P28",
+        "mapsDirections": "https://goo.gl/maps/MN6wfEFb6zUqQP6C6",
     },
     "socialMedia": {
         "instagram" : "https://www.instagram.com/citycyclery/",
