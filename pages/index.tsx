@@ -26,17 +26,17 @@ export default function Home() {
 					btnAction='/brands'
 					style='px-4 md:px-20 mb-10'
 				>
-					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
+					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
 						{houseBrands.map((brand) => (
 							<div
 								key={brand.title}
-								className='flex flex-row md:flex-col bg-dark-600 h-full rounded-xl overflow-hidden md:pb-3'
+								className='flex flex-row md:flex-col bg-dark-600 h-full rounded-xl md:pb-3'
 							>
-								<div className='relative hidden md:block min-w-fit min-h-[45%] h-[10em] rounded-xl overflow-hidden'>
+								<div className='relative hidden md:block min-w-fit min-h-[45%] h-[12em] rounded-xl'>
 									<Image
 										src={brand.image}
 										fill
-										className='object-cover w-full h-full'
+										className='object-contain my-6 px-10'
 										alt={brand.title}
 										loading='lazy'
 									/>

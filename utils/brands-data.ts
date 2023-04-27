@@ -3,7 +3,7 @@ export const houseBrands : BrandProps[] = [
 	{
 		title: 'Devinci',
 		image:
-			'https://images.unsplash.com/photo-1501147830916-ce44a6359892?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+			'/devinci-logo.svg',
 		url: 'https://www.devinci.com/en/',
 		description:
 			'Devinci is a Canadian bicycle manufacturer based in Montreal, Quebec. The company was founded in 1994 by Pierre Devinci and is currently owned by the Devinci family. Devinci is known for its high-end mountain bikes and road bikes.',
@@ -12,7 +12,7 @@ export const houseBrands : BrandProps[] = [
 	{
 		title: 'KHS',
 		image:
-			'https://images.unsplash.com/photo-1501147830916-ce44a6359892?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+			'/khs-logo.png',
 			url: 'https://khsbicycles.com/',
 		description:
 			'KHS Bicycles Inc. is an American-based distributor of KHS brand bicycles. Since its opening in 1974 the company has expanded to over 30 countries worldwide. The company manufactures mountain, road, and turing bicycles as well as comfort tandems and cruisers.',
@@ -20,7 +20,7 @@ export const houseBrands : BrandProps[] = [
 	{
 		title: 'Epic Cycles',
 		image:
-			'https://images.unsplash.com/photo-1501147830916-ce44a6359892?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+			'/epic-cycles-logo.png',
 		url:'https://epiccycles.ca',
 		description:
 			'Located in the GTA, Epic Cycles is Canadas Premier Distributor of Electric Bikes and E-Scooters. Their goal is to change the way people travel by promoting e-bike riding as a safe, green alternative to other modes of transportation. ',

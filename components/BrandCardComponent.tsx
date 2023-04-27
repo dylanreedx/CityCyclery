@@ -14,14 +14,14 @@ export function HouseBrandComponent({
     description
 }: BrandProps ){
     return (
-        <div className="grid m-auto 11/12 bg-dark-700 rounded-2xl">
+        <div className="grid m-auto bg-dark-700 rounded-2xl px-10 py-5 flex-1">
             <div className="relative">
                 <Image
                 src={image}
                 alt='Brand Image'
-                width={800}
-                height={800}
-                className="h-72 w-full object-cover rounded-t-2xl"
+                width={300}
+                height={300}
+                className="my-5 m-auto"
                 ></Image>
             </div>
             <div className="py-5 px-16">
@@ -36,7 +36,7 @@ export function HouseBrandComponent({
                     >View Brand
                     </Button>
                 </div>
-                <p className='text-light-600 py-4 lg:px-12'>{description}</p>
+                <p className='text-light-600 py-4'>{description}</p>
             </div>
         </div>
     )
@@ -49,19 +49,7 @@ export function DistBrandComponent({
     return (
         <div className="container m-auto bg-dark-700 rounded-2xl p-3 hover:bg-dark-600">
             <a href={url} target="__blank">
-                <div className="flex flex-row">
-                    <div className="object-fit">
-                        <Image
-                        src={image}
-                        alt="Distributor Image"
-                        width={50}
-                        height={50}
-                        ></Image>
-                    </div>
-                    <div className="ml-4">
-                        <h2 className="text-xl font-medium text-light-500">{title}</h2>
-                    </div>
-                </div>
+                <h2 className="text-center text-xl font-medium text-light-500">{title}</h2>
             </a>
         </div>
     )

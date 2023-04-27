@@ -62,7 +62,7 @@ export function Footer() {
 								<li>{companyDetails.hours.open}</li>
 								<li>{companyDetails.hours.closed}</li>
 							</ul>
-							<ul className='space-y-1'>
+							<ul className='space-y-1 text-light-600'>
 								<li><a href={'tel: ' + companyDetails.phone} className='hover:text-accent-500'>{companyDetails.phone}</a></li>
 								<li>{companyDetails.location.address}</li>
 							</ul>
