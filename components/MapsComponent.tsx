@@ -39,10 +39,10 @@ const Map = () => {
 			<div className='absolute inset-0 bg-gradient-to-t from-black to-transparent pointer-events-none'></div>
 			<GoogleMap
 				options={mapOptions}
-				zoom={20}
+				zoom={19}
 				center={mapCenter}
 				mapTypeId={google.maps.MapTypeId.ROADMAP}
-				mapContainerStyle={{ width: '1900px', height: '550px' }}
+				mapContainerStyle={{ width: '2500px', height: '550px' }}
 			>
 				<InfoWindowF
 				position={mapCenter}>

@@ -15,7 +15,7 @@ export default function Brands() {
                     <h1 className='font-bold text-4xl mb-4'>Brands</h1>
                     <Bicycle size={30} />
                 </div>
-                <h2 className="font-bold text-3xl text-light-500 mb-4">In House</h2>
+                <h2 className="font-bold text-3xl text-light-500 mb-4">In House Brands</h2>
                 <div className="grid gap-10">
                     {houseBrands.map((brand) => (
                         <HouseBrandComponent
@@ -28,7 +28,7 @@ export default function Brands() {
                     ))}
                 </div>
                 <h2 className="font-bold text-3xl text-light-500 mt-10 mb-4">Distribution Brands</h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                     {distBrands.map((brand) => (
                         <DistBrandComponent
                         title={brand.title}

@@ -27,6 +27,7 @@ export default function Contact() {
 			<div className='mt-32 min-h-[50vh] bg-dark-500'>
 				<Map />
 			</div>
+			<div className='absolute inset-0 w-full h-1/2 mt-auto bg-gradient-to-t from-dark-500 to-transparent pointer-events-none' />
 			<section className='grid place-items-center text-light-500 -translate-y-36'>
 				<div className='bg-dark-600 py-12 px-20 rounded-xl shadow-md'>
 					<div className='pb-12'>
