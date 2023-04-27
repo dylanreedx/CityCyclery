@@ -79,6 +79,6 @@ export const distBrands : BrandProps[] = [
 		title: 'Damco',
 		image:
 			'https://images.unsplash.com/photo-1501147830916-ce44a6359892?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
-		url: 'https://www.damourbicycles.com'
+		url: 'https://www.damourbicycle.com/fr'
 	}
 ];
