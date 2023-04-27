@@ -15,7 +15,7 @@ export default function HeroSection() {
 				/>
 			</div>
 			<div className='grid grid-cols-1 gap-5 lg:px-32'>
-				<h1 className='text-light-500 font-bold text-2xl md:text-4xl lg:text-7xl z-50 max-w-[20ch] mt-24 mx-auto sm:mx-0'>
+				<h1 className='text-light-500 font-bold text-4xl lg:text-7xl z-50 max-w-[20ch] mt-24 mx-auto sm:mx-0'>
 					Sales, Service & Repair of Any & All Bicycles
 				</h1>
 				<p className='text-light-600 text-sm md:text-lg z-50 max-w-[52ch] mx-auto px-6 sm:px-0 sm:mx-0'>
