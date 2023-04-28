@@ -2,6 +2,7 @@ import { Layout } from '@/components/Layout';
 import useSWR from 'swr';
 import { Calendar } from 'phosphor-react';
 import { EventComponent } from '@/components/EventComponent';
+import { isFuture, parseISO } from 'date-fns';
 
 // @ts-ignore
 const fetcher = (...args: any[]) => fetch(...args).then((res) => res.json());
@@ -24,21 +25,25 @@ export default function Events() {
 					</div>
 					<div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
 						{events.data ? (
-							events.data.map((event: any) => (
-								<div
-									key={event.eventId}
-									className='m-auto 11/12 bg-dark-700 rounded-2xl py-8 px-6 min-h-[17.25rem] min-w-full'
-								>
-									<EventComponent
-										title={event.title}
-										startTime={event.startTime}
-										endTime={event.endTime}
-										dateType={event.dateType}
-										description={event.description}
-										location={event.location}
-									></EventComponent>
-								</div>
-							))
+							events.data.map((event: any) =>
+								isFuture(parseISO(event.endTime)) ? (
+									<div
+										key={event.eventId}
+										className='m-auto 11/12 bg-dark-700 rounded-2xl py-8 px-6 min-h-[17.25rem] min-w-full'
+									>
+										<EventComponent
+											title={event.title}
+											startTime={event.startTime}
+											endTime={event.endTime}
+											dateType={event.dateType}
+											description={event.description}
+											location={event.location}
+										></EventComponent>
+									</div>
+								) : (
+									<></>
+								),
+							)
 						) : events.isLoading ? (
 							<span className='font-medium text-lg text-light-500'>
 								Loading Events...
